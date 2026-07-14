@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Furni.shop - Make your interior modern and elegant with our premium furniture collections.">
+    <title>Furni.shop - Modern Interior Furniture</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons and Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Scroll back to top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Navigation -->
+    <header class="header-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <span class="logo-text">Furni.shop</span>
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto nav-links">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deals">Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="nav-actions d-flex align-items-center">
+                        <button class="icon-btn search-toggle" aria-label="Search">
+                            <i class="ri-search-line"></i>
+                        </button>
+                        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+                            <i class="ri-moon-line" id="themeIcon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-6 col-md-12 hero-content">
+                        <span class="badge-premium mb-3">Premium Furniture</span>
+                        <h1 class="hero-title">We Help You Make <span class="text-gradient">Modern Interior</span></h1>
+                        <p class="hero-subtitle">We will help you to make an elegant and luxurious interior designed by professional interior designers. Elevate your living space today.</p>
+                        <div class="hero-btns mt-4">
+                            <a href="#products" class="btn btn-primary-custom me-3">Shop Now <i class="ri-arrow-right-line ms-2"></i></a>
+                            <a href="#about" class="btn btn-outline-custom">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 hero-image-wrapper">
+                        <div class="image-blob-bg"></div>
+                        <img src="./assets/header.jpg" alt="Modern elegant interior living room" class="hero-img img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deals Section -->
+        <section class="deals-section py-5 section-padding" id="deals">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 deals-header mb-4 mb-md-0">
+                        <h2 class="section-title">Hot <span class="fire-emoji">🔥</span> Deals <br> for You</h2>
+                        <p class="section-subtitle">Online shopping for retail sales direct to consumers</p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="offer-card">
+                                    <div class="icon-wrapper">💰</div>
+                                    <h3>1.5% Cashback</h3>
+                                    <p>Earn a 5% cashback reward on every furniture purchase you make!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="offer-card">
+                                    <div class="icon-wrapper">📅</div>
+                                    <h3>30 Day Terms</h3>
+                                    <p>Take advantage of our 30-day payment terms, completely interest-free!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="offer-card">
+                                    <div class="icon-wrapper">💸</div>
+                                    <h3>Save Money</h3>
+                                    <p>Discover unbeatable prices and save big money on top-quality furniture!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 about-text-content order-2 order-lg-1">
+                        <h2 class="section-title">About Us</h2>
+                        <p class="lead-text mb-4">
+                            Our passion for exceptional craftsmanship drives us to curate the best pieces for every room in your house.
+                        </p>
+                        
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <span class="feature-num">01</span>
+                                <h4>Who we are</h4>
+                                <p>You get a 2-week free trial to kick the Smooet tries. We want you to explore.</p>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-num">02</span>
+                                <h4>What we do</h4>
+                                <p>We give you a free guide through the interior design process.</p>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-num">03</span>
+                                <h4>How we help</h4>
+                                <p>Use our multimedia lectures, videos, and coaching sessions for your space.</p>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-num">04</span>
+                                <h4>Success stories</h4>
+                                <p>With access to online resources anyone can transform their home.</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary-custom mt-4">Learn More</button>
+                    </div>
+                    <div class="col-lg-6 about-image-wrapper order-1 order-lg-2 mb-5 mb-lg-0">
+                        <div class="image-decoration"></div>
+                        <img src="assets/about.png" alt="Furniture craftsmen" class="img-fluid rounded-custom shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section section-padding" id="products">
+            <div class="container">
+                <div class="text-center mb-5 section-heading">
+                    <span class="badge-premium">Discover</span>
+                    <h2 class="section-title">Featured Products</h2>
+                    <p class="section-subtitle">Explore our latest collection of premium furniture.</p>
+                </div>
+
+                <div class="row g-4 product-grid">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <span class="product-badge badge-new">New</span>
+                                <img src="assets/product-1.png" alt="Stackable Chair" class="img-fluid">
+                                <div class="product-actions">
+                                    <button class="btn-action"><i class="ri-shopping-cart-2-line"></i></button>
+                                    <button class="btn-action"><i class="ri-heart-line"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Modern Chair</h4>
+                                <div class="price-rating">
+                                    <span class="price">$120.00</span>
+                                    <span class="rating"><i class="ri-star-fill"></i> 4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="assets/product-2.png" alt="Dining Chair" class="img-fluid">
+                                <div class="product-actions">
+                                    <button class="btn-action"><i class="ri-shopping-cart-2-line"></i></button>
+                                    <button class="btn-action"><i class="ri-heart-line"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Dining Chair</h4>
+                                <div class="price-rating">
+                                    <span class="price">$85.00</span>
+                                    <span class="rating"><i class="ri-star-fill"></i> 4.5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <span class="product-badge badge-sale">-15%</span>
+                                <img src="assets/product-3.png" alt="Lamp Tool" class="img-fluid">
+                                <div class="product-actions">
+                                    <button class="btn-action"><i class="ri-shopping-cart-2-line"></i></button>
+                                    <button class="btn-action"><i class="ri-heart-line"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Table Lamp</h4>
+                                <div class="price-rating">
+                                    <span class="price">$55.00</span>
+                                    <span class="rating"><i class="ri-star-fill"></i> 4.9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="assets/product-4.png" alt="Stackable Chair" class="img-fluid">
+                                <div class="product-actions">
+                                    <button class="btn-action"><i class="ri-shopping-cart-2-line"></i></button>
+                                    <button class="btn-action"><i class="ri-heart-line"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Stackable Chair</h4>
+                                <div class="price-rating">
+                                    <span class="price">$87.00</span>
+                                    <span class="rating"><i class="ri-star-fill"></i> 4.6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="assets/product-5.png" alt="Lounge Chair" class="img-fluid">
+                                <div class="product-actions">
+                                    <button class="btn-action"><i class="ri-shopping-cart-2-line"></i></button>
+                                    <button class="btn-action"><i class="ri-heart-line"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Lounge Chair</h4>
+                                <div class="price-rating">
+                                    <span class="price">$150.00</span>
+                                    <span class="rating"><i class="ri-star-fill"></i> 5.0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="assets/product-6.png" alt="Standing Lamp" class="img-fluid">
+                                <div class="product-actions">
+                                    <button class="btn-action"><i class="ri-shopping-cart-2-line"></i></button>
+                                    <button class="btn-action"><i class="ri-heart-line"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Standing Lamp</h4>
+                                <div class="price-rating">
+                                    <span class="price">$95.00</span>
+                                    <span class="rating"><i class="ri-star-fill"></i> 4.7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Product 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <span class="product-badge badge-new">Trending</span>
+                                <img src="assets/product-4.png" alt="Minimalist Sofa" class="img-fluid">
+                                <div class="product-actions">
+                                    <button class="btn-action"><i class="ri-shopping-cart-2-line"></i></button>
+                                    <button class="btn-action"><i class="ri-heart-line"></i></button>
+                                    <button class="btn-action" title="Quick View"><i class="ri-eye-line"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Minimalist Sofa</h4>
+                                <div class="price-rating">
+                                    <span class="price">$399.00</span>
+                                    <span class="rating"><i class="ri-star-fill"></i> 4.9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Product 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <span class="product-badge badge-sale">-20%</span>
+                                <img src="assets/product-5.png" alt="Wooden Coffee Table" class="img-fluid">
+                                <div class="product-actions">
+                                    <button class="btn-action"><i class="ri-shopping-cart-2-line"></i></button>
+                                    <button class="btn-action"><i class="ri-heart-line"></i></button>
+                                    <button class="btn-action" title="Quick View"><i class="ri-eye-line"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Wooden Coffee Table</h4>
+                                <div class="price-rating">
+                                    <span class="price text-danger text-decoration-line-through me-2" style="font-size: 0.9rem;">$150.00</span>
+                                    <span class="price">$120.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Product 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card">
+                            <div class="product-img-wrapper">
+                                <img src="assets/product-1.png" alt="Ergonomic Office Chair" class="img-fluid">
+                                <div class="product-actions">
+                                    <button class="btn-action"><i class="ri-shopping-cart-2-line"></i></button>
+                                    <button class="btn-action"><i class="ri-heart-line"></i></button>
+                                    <button class="btn-action" title="Quick View"><i class="ri-eye-line"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Ergonomic Office Chair</h4>
+                                <div class="price-rating">
+                                    <span class="price">$195.00</span>
+                                    <span class="rating"><i class="ri-star-fill"></i> 4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section section-padding bg-light-alt" id="testimonials">
+            <div class="container">
+                <div class="text-center mb-5 section-heading">
+                    <h2 class="section-title">What Our Happy Clients Say</h2>
+                    <p class="section-subtitle">Testimonials highlighting our commitment to quality, exceptional service, and customer satisfaction.</p>
+                </div>
+                
+                <!-- Swiper -->
+                <div class="swiper testimonialSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                <p class="testimonial-text">"Furni.shop transformed my living space with their beautiful and affordable furniture. The quality exceeded my expectations completely."</p>
+                                <div class="client-info">
+                                    <img src="assets/user-1.jpg" alt="Michael Brown" class="client-avatar">
+                                    <div>
+                                        <h5>Michael Brown</h5>
+                                        <span>Architect</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                <p class="testimonial-text">"Amazing service and great quality! I'll definitely shop here again. The delivery was fast and the assembly was incredibly easy."</p>
+                                <div class="client-info">
+                                    <img src="assets/user-2.jpg" alt="Sarah Johnson" class="client-avatar">
+                                    <div>
+                                        <h5>Sarah Johnson</h5>
+                                        <span>Interior Designer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                <p class="testimonial-text">"I love the modern aesthetic of their pieces. It fits perfectly into my new studio apartment. Highly recommended to everyone!"</p>
+                                <div class="client-info">
+                                    <img src="assets/user-3.jpg" alt="David Smith" class="client-avatar">
+                                    <div>
+                                        <h5>David Smith</h5>
+                                        <span>Photographer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section-padding" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 footer-brand">
+                    <h3>Furni.shop</h3>
+                    <p class="tagline mt-3">Join us in transforming your living spaces with furniture that blends elegance and practicality seamlessly.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" aria-label="Facebook"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-heading">Subscribe Newsletter</h5>
+                    <p class="footer-text mb-3">Get the latest updates and exclusive offers directly in your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary-custom w-100 mt-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom text-center mt-5">
+                <p>&copy; 2026 Furni.shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Full-screen Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <button class="close-search" id="closeSearch" aria-label="Close Search">
+            <i class="ri-close-line"></i>
+        </button>
+        <form class="search-overlay-form">
+            <input type="search" id="searchInput" placeholder="What are you looking for?..." autocomplete="off">
+            <button type="submit" class="search-overlay-btn"><i class="ri-search-line"></i></button>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
